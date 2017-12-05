@@ -3,12 +3,12 @@ platform :ios, '8.1'
 
 target :NendVideoMoPubCustomEventSample do
 
-pod 'NendSDK_iOS_MoPub_CustomEvent', :path=> './NendSDK_iOS_MoPub_CustomEvent.podspec'
+pod 'NendSDK_iOS_MoPub_CustomEvent'
 
 end
 
 target :NendVideoMoPubCustomEventSample_Swift do
 
-pod 'NendSDK_iOS_MoPub_CustomEvent', :path=> './NendSDK_iOS_MoPub_CustomEvent.podspec'
+pod 'NendSDK_iOS_MoPub_CustomEvent'
 
 end
