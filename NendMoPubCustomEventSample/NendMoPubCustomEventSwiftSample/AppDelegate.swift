@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  NendVideoMoPubCustomEventSample_Swift
+//  NendMoPubCustomEventSwiftSample
 //
-//  Copyright © 2017年 F@N Communications. All rights reserved.
+//  Copyright © 2018年 F@N Communications. All rights reserved.
 //
 
 import UIKit

@@ -1,48 +1,54 @@
 //
-//  ViewController.m
-//  NendVideoMoPubCustomEventSample
+//  RewardedVideoViewController.m
+//  NendMoPubCustomEventSample
 //
-//  Copyright © 2017年 F@N Communications. All rights reserved.
+//  Copyright © 2018年 F@N Communications. All rights reserved.
 //
 
-#import "ViewController.h"
-
+#import "RewardedVideoViewController.h"
 #import "MoPub.h"
 #import "MPRewardedVideo.h"
 #import "NendInstanceMediationSettings.h"
 
 static NSString *const kAdUnitId = @"your ad unit id";
 
-@interface ViewController () <MPRewardedVideoDelegate>
+@interface RewardedVideoViewController () <MPRewardedVideoDelegate>
 
 @end
 
-@implementation ViewController
+@implementation RewardedVideoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [[MoPub sharedInstance] initializeRewardedVideoWithGlobalMediationSettings:nil delegate:self];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)load:(id)sender {
-    NendInstanceMediationSettings *settings = [NendInstanceMediationSettings new];
-    settings.userId = @"your user id";
-    [MPRewardedVideo loadRewardedVideoAdWithAdUnitID:kAdUnitId withMediationSettings:@[settings]];
+- (IBAction)loadAd:(id)sender {
+    NendInstanceMediationSettings *mediationSettings = [NendInstanceMediationSettings new];
+    mediationSettings.userId = @"your-user-id";
+    [mediationSettings setAge:18];
+    [mediationSettings setGender:NendAdGenderMale];
+    [mediationSettings setBirthdayWithYear:2000 month:1 day:1];
+    [mediationSettings addCustomIntegerValue:123 forKey:@"integerKey"];
+    [mediationSettings addCustomDoubleValue:123.45 forKey:@"doubleKey"];
+    [mediationSettings addCustomStringValue:@"test" forKey:@"stringKey"];
+    [mediationSettings addCustomBoolValue:YES forKey:@"boolKey"];
+    [MPRewardedVideo loadRewardedVideoAdWithAdUnitID:kAdUnitId withMediationSettings:@[mediationSettings]];
 }
 
-- (IBAction)show:(id)sender {
+- (IBAction)showAd:(id)sender {
     if ([MPRewardedVideo hasAdAvailableForAdUnitID:kAdUnitId]) {
         [MPRewardedVideo presentRewardedVideoAdForAdUnitID:kAdUnitId fromViewController:self withReward:nil];
     }
 }
 
-
 #pragma mark - MPRewardedVideoDelegate
-
 - (void)rewardedVideoAdDidLoadForAdUnitID:(NSString *)adUnitID {
     NSLog(@"%s: %@", __FUNCTION__, adUnitID);
 }
@@ -72,6 +78,9 @@ static NSString *const kAdUnitId = @"your ad unit id";
 }
 - (void)rewardedVideoAdShouldRewardForAdUnitID:(NSString *)adUnitID reward:(MPRewardedVideoReward *)reward {
     NSLog(@"%s: %@, reward: %@ %@", __FUNCTION__, adUnitID, reward.currencyType, reward.amount);
+}
+- (void)rewardedVideoAdDidExpireForAdUnitID:(NSString *)adUnitID {
+    NSLog(@"%s: %@", __FUNCTION__, adUnitID);
 }
 
 @end

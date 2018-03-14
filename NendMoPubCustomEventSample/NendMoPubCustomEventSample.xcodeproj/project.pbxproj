@@ -1,0 +1,725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		541115546823F53883DB4E48 /* libPods-NendMoPubCustomEventSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B27DFD2A372849B4F9384E78 /* libPods-NendMoPubCustomEventSample.a */; };
+		987EF9B5647115E83E39A607 /* libPods-NendMoPubCustomEventSwiftSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EC477B252141D6DA7C7DA02 /* libPods-NendMoPubCustomEventSwiftSample.a */; };
+		B5A26C272057E5DE000D2DB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A26C262057E5DE000D2DB0 /* AppDelegate.m */; };
+		B5A26C2D2057E5DE000D2DB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A26C2B2057E5DE000D2DB0 /* Main.storyboard */; };
+		B5A26C2F2057E5DE000D2DB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A26C2E2057E5DE000D2DB0 /* Assets.xcassets */; };
+		B5A26C322057E5DE000D2DB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A26C302057E5DE000D2DB0 /* LaunchScreen.storyboard */; };
+		B5A26C352057E5DE000D2DB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A26C342057E5DE000D2DB0 /* main.m */; };
+		B5A26C5C2057E6EF000D2DB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A26C5B2057E6EF000D2DB0 /* AppDelegate.swift */; };
+		B5A26C612057E6EF000D2DB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A26C5F2057E6EF000D2DB0 /* Main.storyboard */; };
+		B5A26C632057E6EF000D2DB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A26C622057E6EF000D2DB0 /* Assets.xcassets */; };
+		B5A26C662057E6EF000D2DB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A26C642057E6EF000D2DB0 /* LaunchScreen.storyboard */; };
+		B5A26C6D2057E71D000D2DB0 /* SelectAdTypeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A26C6C2057E71D000D2DB0 /* SelectAdTypeTableViewController.m */; };
+		B5A26C702057E81A000D2DB0 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A26C6F2057E81A000D2DB0 /* BannerViewController.m */; };
+		B5A26C732057E8AE000D2DB0 /* RewardedVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A26C722057E8AE000D2DB0 /* RewardedVideoViewController.m */; };
+		B5A26C762057ECE9000D2DB0 /* SelectAdTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A26C752057ECE9000D2DB0 /* SelectAdTypeTableViewController.swift */; };
+		B5A26C782057ED0F000D2DB0 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A26C772057ED0F000D2DB0 /* BannerViewController.swift */; };
+		B5A26C7A2057ED27000D2DB0 /* RewardedVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A26C792057ED27000D2DB0 /* RewardedVideoViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		163F8D724E570A2097C4244A /* Pods-NendMoPubCustomEventSwiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NendMoPubCustomEventSwiftSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-NendMoPubCustomEventSwiftSample/Pods-NendMoPubCustomEventSwiftSample.release.xcconfig"; sourceTree = "<group>"; };
+		23EDD6C6A5534C1C734673BB /* Pods-NendMoPubCustomEventSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NendMoPubCustomEventSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NendMoPubCustomEventSample/Pods-NendMoPubCustomEventSample.debug.xcconfig"; sourceTree = "<group>"; };
+		3EC477B252141D6DA7C7DA02 /* libPods-NendMoPubCustomEventSwiftSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NendMoPubCustomEventSwiftSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE9A7972586CADC4DDF5E8DA /* Pods-NendMoPubCustomEventSwiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NendMoPubCustomEventSwiftSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NendMoPubCustomEventSwiftSample/Pods-NendMoPubCustomEventSwiftSample.debug.xcconfig"; sourceTree = "<group>"; };
+		B27DFD2A372849B4F9384E78 /* libPods-NendMoPubCustomEventSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NendMoPubCustomEventSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A26C222057E5DE000D2DB0 /* NendMoPubCustomEventSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NendMoPubCustomEventSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A26C252057E5DE000D2DB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B5A26C262057E5DE000D2DB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B5A26C2C2057E5DE000D2DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5A26C2E2057E5DE000D2DB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5A26C312057E5DE000D2DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5A26C332057E5DE000D2DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5A26C342057E5DE000D2DB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5A26C592057E6EF000D2DB0 /* NendMoPubCustomEventSwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NendMoPubCustomEventSwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A26C5B2057E6EF000D2DB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5A26C602057E6EF000D2DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5A26C622057E6EF000D2DB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5A26C652057E6EF000D2DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5A26C672057E6EF000D2DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5A26C6B2057E71D000D2DB0 /* SelectAdTypeTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectAdTypeTableViewController.h; sourceTree = "<group>"; };
+		B5A26C6C2057E71D000D2DB0 /* SelectAdTypeTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectAdTypeTableViewController.m; sourceTree = "<group>"; };
+		B5A26C6E2057E81A000D2DB0 /* BannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
+		B5A26C6F2057E81A000D2DB0 /* BannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
+		B5A26C712057E8AE000D2DB0 /* RewardedVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardedVideoViewController.h; sourceTree = "<group>"; };
+		B5A26C722057E8AE000D2DB0 /* RewardedVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RewardedVideoViewController.m; sourceTree = "<group>"; };
+		B5A26C752057ECE9000D2DB0 /* SelectAdTypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAdTypeTableViewController.swift; sourceTree = "<group>"; };
+		B5A26C772057ED0F000D2DB0 /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
+		B5A26C792057ED27000D2DB0 /* RewardedVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardedVideoViewController.swift; sourceTree = "<group>"; };
+		B5A26C7B2057F169000D2DB0 /* NendMoPubCustomEventSwiftSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NendMoPubCustomEventSwiftSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		E3EC055353ECAF2B63AC5F10 /* Pods-NendMoPubCustomEventSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NendMoPubCustomEventSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-NendMoPubCustomEventSample/Pods-NendMoPubCustomEventSample.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5A26C1F2057E5DE000D2DB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541115546823F53883DB4E48 /* libPods-NendMoPubCustomEventSample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A26C562057E6EF000D2DB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				987EF9B5647115E83E39A607 /* libPods-NendMoPubCustomEventSwiftSample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		087D2C7A835469EF599688CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B27DFD2A372849B4F9384E78 /* libPods-NendMoPubCustomEventSample.a */,
+				3EC477B252141D6DA7C7DA02 /* libPods-NendMoPubCustomEventSwiftSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A06CC199DB4CECE18C8F0DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23EDD6C6A5534C1C734673BB /* Pods-NendMoPubCustomEventSample.debug.xcconfig */,
+				E3EC055353ECAF2B63AC5F10 /* Pods-NendMoPubCustomEventSample.release.xcconfig */,
+				AE9A7972586CADC4DDF5E8DA /* Pods-NendMoPubCustomEventSwiftSample.debug.xcconfig */,
+				163F8D724E570A2097C4244A /* Pods-NendMoPubCustomEventSwiftSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B5A26C192057E5DE000D2DB0 = {
+			isa = PBXGroup;
+			children = (
+				B5A26C242057E5DE000D2DB0 /* NendMoPubCustomEventSample */,
+				B5A26C5A2057E6EF000D2DB0 /* NendMoPubCustomEventSwiftSample */,
+				B5A26C232057E5DE000D2DB0 /* Products */,
+				5A06CC199DB4CECE18C8F0DC /* Pods */,
+				087D2C7A835469EF599688CD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B5A26C232057E5DE000D2DB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5A26C222057E5DE000D2DB0 /* NendMoPubCustomEventSample.app */,
+				B5A26C592057E6EF000D2DB0 /* NendMoPubCustomEventSwiftSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5A26C242057E5DE000D2DB0 /* NendMoPubCustomEventSample */ = {
+			isa = PBXGroup;
+			children = (
+				B5A26C252057E5DE000D2DB0 /* AppDelegate.h */,
+				B5A26C262057E5DE000D2DB0 /* AppDelegate.m */,
+				B5A26C6B2057E71D000D2DB0 /* SelectAdTypeTableViewController.h */,
+				B5A26C6C2057E71D000D2DB0 /* SelectAdTypeTableViewController.m */,
+				B5A26C6E2057E81A000D2DB0 /* BannerViewController.h */,
+				B5A26C6F2057E81A000D2DB0 /* BannerViewController.m */,
+				B5A26C712057E8AE000D2DB0 /* RewardedVideoViewController.h */,
+				B5A26C722057E8AE000D2DB0 /* RewardedVideoViewController.m */,
+				B5A26C2B2057E5DE000D2DB0 /* Main.storyboard */,
+				B5A26C2E2057E5DE000D2DB0 /* Assets.xcassets */,
+				B5A26C302057E5DE000D2DB0 /* LaunchScreen.storyboard */,
+				B5A26C332057E5DE000D2DB0 /* Info.plist */,
+				B5A26C342057E5DE000D2DB0 /* main.m */,
+			);
+			path = NendMoPubCustomEventSample;
+			sourceTree = "<group>";
+		};
+		B5A26C5A2057E6EF000D2DB0 /* NendMoPubCustomEventSwiftSample */ = {
+			isa = PBXGroup;
+			children = (
+				B5A26C5B2057E6EF000D2DB0 /* AppDelegate.swift */,
+				B5A26C752057ECE9000D2DB0 /* SelectAdTypeTableViewController.swift */,
+				B5A26C772057ED0F000D2DB0 /* BannerViewController.swift */,
+				B5A26C792057ED27000D2DB0 /* RewardedVideoViewController.swift */,
+				B5A26C5F2057E6EF000D2DB0 /* Main.storyboard */,
+				B5A26C622057E6EF000D2DB0 /* Assets.xcassets */,
+				B5A26C642057E6EF000D2DB0 /* LaunchScreen.storyboard */,
+				B5A26C672057E6EF000D2DB0 /* Info.plist */,
+				B5A26C7B2057F169000D2DB0 /* NendMoPubCustomEventSwiftSample-Bridging-Header.h */,
+			);
+			path = NendMoPubCustomEventSwiftSample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5A26C212057E5DE000D2DB0 /* NendMoPubCustomEventSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5A26C382057E5DE000D2DB0 /* Build configuration list for PBXNativeTarget "NendMoPubCustomEventSample" */;
+			buildPhases = (
+				D5A444432D09D2CB37DE0730 /* [CP] Check Pods Manifest.lock */,
+				B5A26C1E2057E5DE000D2DB0 /* Sources */,
+				B5A26C1F2057E5DE000D2DB0 /* Frameworks */,
+				B5A26C202057E5DE000D2DB0 /* Resources */,
+				16B572AB4416A09AA44D9810 /* [CP] Embed Pods Frameworks */,
+				8B143DA17521F9B44FECE04A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NendMoPubCustomEventSample;
+			productName = NendMoPubCustomEventSample;
+			productReference = B5A26C222057E5DE000D2DB0 /* NendMoPubCustomEventSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5A26C582057E6EF000D2DB0 /* NendMoPubCustomEventSwiftSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5A26C682057E6EF000D2DB0 /* Build configuration list for PBXNativeTarget "NendMoPubCustomEventSwiftSample" */;
+			buildPhases = (
+				9B6DFCD71AF2DEA8E67FDE72 /* [CP] Check Pods Manifest.lock */,
+				B5A26C552057E6EF000D2DB0 /* Sources */,
+				B5A26C562057E6EF000D2DB0 /* Frameworks */,
+				B5A26C572057E6EF000D2DB0 /* Resources */,
+				CFC2A6B374EFBAE891BAFBBB /* [CP] Embed Pods Frameworks */,
+				3562AC33D2A182C0B969FD85 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NendMoPubCustomEventSwiftSample;
+			productName = NendMoPubCustomEventSwiftSample;
+			productReference = B5A26C592057E6EF000D2DB0 /* NendMoPubCustomEventSwiftSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5A26C1A2057E5DE000D2DB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "F@N Communications";
+				TargetAttributes = {
+					B5A26C212057E5DE000D2DB0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					B5A26C582057E6EF000D2DB0 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B5A26C1D2057E5DE000D2DB0 /* Build configuration list for PBXProject "NendMoPubCustomEventSample" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5A26C192057E5DE000D2DB0;
+			productRefGroup = B5A26C232057E5DE000D2DB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5A26C212057E5DE000D2DB0 /* NendMoPubCustomEventSample */,
+				B5A26C582057E6EF000D2DB0 /* NendMoPubCustomEventSwiftSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5A26C202057E5DE000D2DB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A26C322057E5DE000D2DB0 /* LaunchScreen.storyboard in Resources */,
+				B5A26C2F2057E5DE000D2DB0 /* Assets.xcassets in Resources */,
+				B5A26C2D2057E5DE000D2DB0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A26C572057E6EF000D2DB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A26C662057E6EF000D2DB0 /* LaunchScreen.storyboard in Resources */,
+				B5A26C632057E6EF000D2DB0 /* Assets.xcassets in Resources */,
+				B5A26C612057E6EF000D2DB0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16B572AB4416A09AA44D9810 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NendMoPubCustomEventSample/Pods-NendMoPubCustomEventSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3562AC33D2A182C0B969FD85 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NendMoPubCustomEventSwiftSample/Pods-NendMoPubCustomEventSwiftSample-resources.sh",
+				"${PODS_ROOT}/NendSDK_iOS/NendAd.embeddedframework/NendAd.framework/Resources/NendAdResource.bundle",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdBrowserController.xib",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseBtn.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseBtn@2x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseBtn@3x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseButtonX.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseButtonX@2x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseButtonX@3x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCountdownTimer.html",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPDAAIcon.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPDAAIcon@2x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPDAAIcon@3x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPMutedBtn.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPMutedBtn@2x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPMutedBtn@3x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPPlayBtn.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPPlayBtn@2x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPPlayBtn@3x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPUnmutedBtn.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPUnmutedBtn@2x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPUnmutedBtn@3x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MRAID.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NendAdResource.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPAdBrowserController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseBtn.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseBtn@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseBtn@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButtonX.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButtonX@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButtonX@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCountdownTimer.html",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDAAIcon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDAAIcon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDAAIcon@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPMutedBtn.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPMutedBtn@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPMutedBtn@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPPlayBtn.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPPlayBtn@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPPlayBtn@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPUnmutedBtn.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPUnmutedBtn@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPUnmutedBtn@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MRAID.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NendMoPubCustomEventSwiftSample/Pods-NendMoPubCustomEventSwiftSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B143DA17521F9B44FECE04A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NendMoPubCustomEventSample/Pods-NendMoPubCustomEventSample-resources.sh",
+				"${PODS_ROOT}/NendSDK_iOS/NendAd.embeddedframework/NendAd.framework/Resources/NendAdResource.bundle",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Internal/Common/MPAdBrowserController.xib",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseBtn.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseBtn@2x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseBtn@3x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseButtonX.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseButtonX@2x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseButtonX@3x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCountdownTimer.html",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPDAAIcon.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPDAAIcon@2x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPDAAIcon@3x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPMutedBtn.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPMutedBtn@2x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPMutedBtn@3x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPPlayBtn.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPPlayBtn@2x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPPlayBtn@3x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPUnmutedBtn.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPUnmutedBtn@2x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPUnmutedBtn@3x.png",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MRAID.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NendAdResource.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPAdBrowserController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseBtn.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseBtn@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseBtn@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButtonX.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButtonX@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButtonX@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCountdownTimer.html",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDAAIcon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDAAIcon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDAAIcon@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPMutedBtn.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPMutedBtn@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPMutedBtn@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPPlayBtn.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPPlayBtn@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPPlayBtn@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPUnmutedBtn.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPUnmutedBtn@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPUnmutedBtn@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MRAID.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NendMoPubCustomEventSample/Pods-NendMoPubCustomEventSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B6DFCD71AF2DEA8E67FDE72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NendMoPubCustomEventSwiftSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFC2A6B374EFBAE891BAFBBB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NendMoPubCustomEventSwiftSample/Pods-NendMoPubCustomEventSwiftSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5A444432D09D2CB37DE0730 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NendMoPubCustomEventSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5A26C1E2057E5DE000D2DB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A26C732057E8AE000D2DB0 /* RewardedVideoViewController.m in Sources */,
+				B5A26C352057E5DE000D2DB0 /* main.m in Sources */,
+				B5A26C6D2057E71D000D2DB0 /* SelectAdTypeTableViewController.m in Sources */,
+				B5A26C272057E5DE000D2DB0 /* AppDelegate.m in Sources */,
+				B5A26C702057E81A000D2DB0 /* BannerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A26C552057E6EF000D2DB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A26C5C2057E6EF000D2DB0 /* AppDelegate.swift in Sources */,
+				B5A26C782057ED0F000D2DB0 /* BannerViewController.swift in Sources */,
+				B5A26C7A2057ED27000D2DB0 /* RewardedVideoViewController.swift in Sources */,
+				B5A26C762057ECE9000D2DB0 /* SelectAdTypeTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B5A26C2B2057E5DE000D2DB0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5A26C2C2057E5DE000D2DB0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5A26C302057E5DE000D2DB0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5A26C312057E5DE000D2DB0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B5A26C5F2057E6EF000D2DB0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5A26C602057E6EF000D2DB0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5A26C642057E6EF000D2DB0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5A26C652057E6EF000D2DB0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5A26C362057E5DE000D2DB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B5A26C372057E5DE000D2DB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5A26C392057E5DE000D2DB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23EDD6C6A5534C1C734673BB /* Pods-NendMoPubCustomEventSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EH6M2BH4ZR;
+				INFOPLIST_FILE = NendMoPubCustomEventSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.nend.NendMoPubCustomEventSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5A26C3A2057E5DE000D2DB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3EC055353ECAF2B63AC5F10 /* Pods-NendMoPubCustomEventSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EH6M2BH4ZR;
+				INFOPLIST_FILE = NendMoPubCustomEventSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.nend.NendMoPubCustomEventSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B5A26C692057E6EF000D2DB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE9A7972586CADC4DDF5E8DA /* Pods-NendMoPubCustomEventSwiftSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EH6M2BH4ZR;
+				INFOPLIST_FILE = NendMoPubCustomEventSwiftSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.nend.NendMoPubCustomEventSwiftSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "NendMoPubCustomEventSwiftSample/NendMoPubCustomEventSwiftSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5A26C6A2057E6EF000D2DB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 163F8D724E570A2097C4244A /* Pods-NendMoPubCustomEventSwiftSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EH6M2BH4ZR;
+				INFOPLIST_FILE = NendMoPubCustomEventSwiftSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.nend.NendMoPubCustomEventSwiftSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NendMoPubCustomEventSwiftSample/NendMoPubCustomEventSwiftSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5A26C1D2057E5DE000D2DB0 /* Build configuration list for PBXProject "NendMoPubCustomEventSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A26C362057E5DE000D2DB0 /* Debug */,
+				B5A26C372057E5DE000D2DB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5A26C382057E5DE000D2DB0 /* Build configuration list for PBXNativeTarget "NendMoPubCustomEventSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A26C392057E5DE000D2DB0 /* Debug */,
+				B5A26C3A2057E5DE000D2DB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5A26C682057E6EF000D2DB0 /* Build configuration list for PBXNativeTarget "NendMoPubCustomEventSwiftSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A26C692057E6EF000D2DB0 /* Debug */,
+				B5A26C6A2057E6EF000D2DB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5A26C1A2057E5DE000D2DB0 /* Project object */;
+}
