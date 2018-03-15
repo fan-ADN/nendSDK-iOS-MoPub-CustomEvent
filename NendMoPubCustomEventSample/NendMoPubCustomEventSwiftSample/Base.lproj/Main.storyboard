@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lTo-Tt-leC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Select Ad Type Table View Controller-->
+        <scene sceneID="cYm-8p-kzA">
+            <objects>
+                <tableViewController id="emn-Tp-Hek" customClass="SelectAdTypeTableViewController" customModule="NendMoPubCustomEventSwiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eoz-2c-61c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="9qG-KR-9qc">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9qG-KR-9qc" id="hzg-L2-XIu">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="emn-Tp-Hek" id="oDc-RL-hdi"/>
+                            <outlet property="delegate" destination="emn-Tp-Hek" id="SGS-Y6-3Qo"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="b7K-Va-pNJ"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="ShowBannerType" id="gYF-t0-6Wx"/>
+                        <segue destination="Nu5-4C-Otz" kind="show" identifier="ShowRewardedVideo" id="klK-Nh-byd"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="klo-gx-Fz6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-264.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Banner View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="BannerViewController" customModule="NendMoPubCustomEventSwiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xcq-YP-0iC"/>
+                        <viewControllerLayoutGuide type="bottom" id="YiR-0n-Yw9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="133.5832083958021"/>
+        </scene>
+        <!--Rewarded Video View Controller-->
+        <scene sceneID="9nj-k2-oxj">
+            <objects>
+                <viewController id="Nu5-4C-Otz" customClass="RewardedVideoViewController" customModule="NendMoPubCustomEventSwiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xgT-CG-xtu"/>
+                        <viewControllerLayoutGuide type="bottom" id="30m-pB-Tg0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W0d-Bq-eqb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gH1-Uw-Qv1">
+                                <rect key="frame" x="159" y="318" width="56" height="30"/>
+                                <state key="normal" title="Load Ad"/>
+                                <connections>
+                                    <action selector="loadAd:" destination="Nu5-4C-Otz" eventType="touchUpInside" id="lLS-N4-uXk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jaw-oS-NMl">
+                                <rect key="frame" x="157" y="373" width="61" height="30"/>
+                                <state key="normal" title="Show Ad"/>
+                                <connections>
+                                    <action selector="showAd:" destination="Nu5-4C-Otz" eventType="touchUpInside" id="Gz6-0R-N8H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gH1-Uw-Qv1" firstAttribute="centerY" secondItem="W0d-Bq-eqb" secondAttribute="centerY" id="Eed-CO-3zQ"/>
+                            <constraint firstItem="Jaw-oS-NMl" firstAttribute="top" secondItem="gH1-Uw-Qv1" secondAttribute="bottom" constant="25" id="Hcg-Cj-7hv"/>
+                            <constraint firstItem="Jaw-oS-NMl" firstAttribute="centerX" secondItem="W0d-Bq-eqb" secondAttribute="centerX" id="gr3-FS-clC"/>
+                            <constraint firstItem="gH1-Uw-Qv1" firstAttribute="centerX" secondItem="W0d-Bq-eqb" secondAttribute="centerX" id="mBd-SB-zvw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aRx-Ch-naI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="478" y="816"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qGv-KL-7Ii">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lTo-Tt-leC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hNi-6i-0vV">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="emn-Tp-Hek" kind="relationship" relationship="rootViewController" id="8IZ-If-sK8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6o7-04-QU0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1023" y="134"/>
+        </scene>
+    </scenes>
+</document>

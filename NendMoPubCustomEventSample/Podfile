@@ -1,13 +1,13 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '8.1'
 
-target :NendVideoMoPubCustomEventSample do
+target :NendMoPubCustomEventSample do
 
 pod 'NendSDK_iOS_MoPub_CustomEvent'
 
 end
 
-target :NendVideoMoPubCustomEventSample_Swift do
+target :NendMoPubCustomEventSwiftSample do
 
 pod 'NendSDK_iOS_MoPub_CustomEvent'
 
