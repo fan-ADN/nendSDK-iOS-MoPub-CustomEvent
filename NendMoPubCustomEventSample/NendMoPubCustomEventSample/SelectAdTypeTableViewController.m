@@ -19,8 +19,8 @@
     
     self.title = @"CustomEventSample";
     
-    self.adTypes = @[@"Banner", @"Rewarded Video"];
-    self.segueNames = @[@"ShowBannerType", @"ShowRewardedVideo"];
+    self.adTypes = @[@"Banner", @"Interstitial", @"Rewarded Video", @"Interstitial Video"];
+    self.segueNames = @[@"ShowBannerType",  @"ShowInterstitial", @"ShowRewardedVideo", @"ShowInterstitialVideo"];
 }
 
 - (void)didReceiveMemoryWarning {

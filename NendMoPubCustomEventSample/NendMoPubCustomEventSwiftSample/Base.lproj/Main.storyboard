@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lTo-Tt-leC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lTo-Tt-leC">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -36,6 +37,8 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="ShowBannerType" id="gYF-t0-6Wx"/>
                         <segue destination="Nu5-4C-Otz" kind="show" identifier="ShowRewardedVideo" id="klK-Nh-byd"/>
+                        <segue destination="9UX-eC-hks" kind="show" identifier="ShowInterstitial" id="Pwa-wf-Qh3"/>
+                        <segue destination="Wwi-lD-mYV" kind="show" identifier="ShowInterstitialVideo" id="NYm-Uf-Ukx"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="klo-gx-Fz6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -99,6 +102,87 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aRx-Ch-naI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="478" y="816"/>
+        </scene>
+        <!--Interstitial View Controller-->
+        <scene sceneID="jSg-if-1RZ">
+            <objects>
+                <viewController id="9UX-eC-hks" customClass="InterstitialViewController" customModule="NendMoPubCustomEventSwiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aZs-ab-1GT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cz4-lU-SSf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IXN-MV-S9v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZiK-SX-fbs">
+                                <rect key="frame" x="159" y="318" width="56" height="30"/>
+                                <state key="normal" title="Load Ad"/>
+                                <connections>
+                                    <action selector="loadAd:" destination="9UX-eC-hks" eventType="touchUpInside" id="DyL-UV-2gz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3J-s3-ClD">
+                                <rect key="frame" x="138" y="373" width="99" height="30"/>
+                                <state key="normal" title="Show Ad"/>
+                                <connections>
+                                    <action selector="showAd:" destination="9UX-eC-hks" eventType="touchUpInside" id="YVN-W7-RaX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZiK-SX-fbs" firstAttribute="centerY" secondItem="IXN-MV-S9v" secondAttribute="centerY" id="54U-BP-E2t"/>
+                            <constraint firstItem="Z3J-s3-ClD" firstAttribute="top" secondItem="ZiK-SX-fbs" secondAttribute="bottom" constant="25" id="IaF-6Y-pba"/>
+                            <constraint firstItem="ZiK-SX-fbs" firstAttribute="centerX" secondItem="IXN-MV-S9v" secondAttribute="centerX" id="eny-Cr-Pdx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z3J-s3-ClD" secondAttribute="trailing" constant="122" id="iom-ZI-sGk"/>
+                            <constraint firstItem="Z3J-s3-ClD" firstAttribute="centerX" secondItem="IXN-MV-S9v" secondAttribute="centerX" id="rq9-ua-fPb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YbX-oV-0Z0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1160.8" y="815.44227886056979"/>
+        </scene>
+        <!--Interstitial Video View Controller-->
+        <scene sceneID="04Y-8b-zW8">
+            <objects>
+                <viewController id="Wwi-lD-mYV" customClass="InterstitialVideoViewController" customModule="NendMoPubCustomEventSwiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zj5-mA-F8B"/>
+                        <viewControllerLayoutGuide type="bottom" id="YW9-Z8-LF6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3bo-r1-jJT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rX5-ck-eFd">
+                                <rect key="frame" x="159" y="318" width="56" height="30"/>
+                                <state key="normal" title="Load Ad"/>
+                                <connections>
+                                    <action selector="loadAd:" destination="Wwi-lD-mYV" eventType="touchUpInside" id="nC5-ca-iJL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lv-Cl-xhF">
+                                <rect key="frame" x="157" y="373" width="61" height="30"/>
+                                <state key="normal" title="Show Ad"/>
+                                <connections>
+                                    <action selector="showAd:" destination="Wwi-lD-mYV" eventType="touchUpInside" id="Jd2-BJ-pIW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rX5-ck-eFd" firstAttribute="centerY" secondItem="3bo-r1-jJT" secondAttribute="centerY" id="GbO-WI-L6D"/>
+                            <constraint firstItem="5lv-Cl-xhF" firstAttribute="top" secondItem="rX5-ck-eFd" secondAttribute="bottom" constant="25" id="N1u-7n-kav"/>
+                            <constraint firstItem="5lv-Cl-xhF" firstAttribute="centerX" secondItem="3bo-r1-jJT" secondAttribute="centerX" id="YDe-4g-Zgp"/>
+                            <constraint firstItem="rX5-ck-eFd" firstAttribute="centerX" secondItem="3bo-r1-jJT" secondAttribute="centerX" id="tyY-e7-8cn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lxa-Ku-xnn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1828" y="814"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qGv-KL-7Ii">
