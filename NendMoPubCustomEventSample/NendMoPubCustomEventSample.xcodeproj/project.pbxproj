@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		541115546823F53883DB4E48 /* libPods-NendMoPubCustomEventSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B27DFD2A372849B4F9384E78 /* libPods-NendMoPubCustomEventSample.a */; };
 		987EF9B5647115E83E39A607 /* libPods-NendMoPubCustomEventSwiftSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EC477B252141D6DA7C7DA02 /* libPods-NendMoPubCustomEventSwiftSample.a */; };
+		B5004E9F2080877300A90901 /* InterstitialVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5004E9E2080877300A90901 /* InterstitialVideoViewController.swift */; };
+		B5004EA12080878600A90901 /* InterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5004EA02080878600A90901 /* InterstitialViewController.swift */; };
+		B59A90812080A8900043F6D1 /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A90802080A8900043F6D1 /* InterstitialViewController.m */; };
+		B59A90842080A8A40043F6D1 /* InterstitialVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B59A90832080A8A40043F6D1 /* InterstitialVideoViewController.m */; };
 		B5A26C272057E5DE000D2DB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A26C262057E5DE000D2DB0 /* AppDelegate.m */; };
 		B5A26C2D2057E5DE000D2DB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A26C2B2057E5DE000D2DB0 /* Main.storyboard */; };
 		B5A26C2F2057E5DE000D2DB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A26C2E2057E5DE000D2DB0 /* Assets.xcassets */; };
@@ -32,6 +36,12 @@
 		3EC477B252141D6DA7C7DA02 /* libPods-NendMoPubCustomEventSwiftSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NendMoPubCustomEventSwiftSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9A7972586CADC4DDF5E8DA /* Pods-NendMoPubCustomEventSwiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NendMoPubCustomEventSwiftSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NendMoPubCustomEventSwiftSample/Pods-NendMoPubCustomEventSwiftSample.debug.xcconfig"; sourceTree = "<group>"; };
 		B27DFD2A372849B4F9384E78 /* libPods-NendMoPubCustomEventSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NendMoPubCustomEventSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5004E9E2080877300A90901 /* InterstitialVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialVideoViewController.swift; sourceTree = "<group>"; };
+		B5004EA02080878600A90901 /* InterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialViewController.swift; sourceTree = "<group>"; };
+		B59A907F2080A8900043F6D1 /* InterstitialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
+		B59A90802080A8900043F6D1 /* InterstitialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterstitialViewController.m; sourceTree = "<group>"; };
+		B59A90822080A8A40043F6D1 /* InterstitialVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterstitialVideoViewController.h; sourceTree = "<group>"; };
+		B59A90832080A8A40043F6D1 /* InterstitialVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterstitialVideoViewController.m; sourceTree = "<group>"; };
 		B5A26C222057E5DE000D2DB0 /* NendMoPubCustomEventSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NendMoPubCustomEventSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A26C252057E5DE000D2DB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B5A26C262057E5DE000D2DB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -130,6 +140,10 @@
 				B5A26C6F2057E81A000D2DB0 /* BannerViewController.m */,
 				B5A26C712057E8AE000D2DB0 /* RewardedVideoViewController.h */,
 				B5A26C722057E8AE000D2DB0 /* RewardedVideoViewController.m */,
+				B59A907F2080A8900043F6D1 /* InterstitialViewController.h */,
+				B59A90802080A8900043F6D1 /* InterstitialViewController.m */,
+				B59A90822080A8A40043F6D1 /* InterstitialVideoViewController.h */,
+				B59A90832080A8A40043F6D1 /* InterstitialVideoViewController.m */,
 				B5A26C2B2057E5DE000D2DB0 /* Main.storyboard */,
 				B5A26C2E2057E5DE000D2DB0 /* Assets.xcassets */,
 				B5A26C302057E5DE000D2DB0 /* LaunchScreen.storyboard */,
@@ -146,6 +160,8 @@
 				B5A26C752057ECE9000D2DB0 /* SelectAdTypeTableViewController.swift */,
 				B5A26C772057ED0F000D2DB0 /* BannerViewController.swift */,
 				B5A26C792057ED27000D2DB0 /* RewardedVideoViewController.swift */,
+				B5004EA02080878600A90901 /* InterstitialViewController.swift */,
+				B5004E9E2080877300A90901 /* InterstitialVideoViewController.swift */,
 				B5A26C5F2057E6EF000D2DB0 /* Main.storyboard */,
 				B5A26C622057E6EF000D2DB0 /* Assets.xcassets */,
 				B5A26C642057E6EF000D2DB0 /* LaunchScreen.storyboard */,
@@ -457,8 +473,10 @@
 			files = (
 				B5A26C732057E8AE000D2DB0 /* RewardedVideoViewController.m in Sources */,
 				B5A26C352057E5DE000D2DB0 /* main.m in Sources */,
+				B59A90842080A8A40043F6D1 /* InterstitialVideoViewController.m in Sources */,
 				B5A26C6D2057E71D000D2DB0 /* SelectAdTypeTableViewController.m in Sources */,
 				B5A26C272057E5DE000D2DB0 /* AppDelegate.m in Sources */,
+				B59A90812080A8900043F6D1 /* InterstitialViewController.m in Sources */,
 				B5A26C702057E81A000D2DB0 /* BannerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,7 +487,9 @@
 			files = (
 				B5A26C5C2057E6EF000D2DB0 /* AppDelegate.swift in Sources */,
 				B5A26C782057ED0F000D2DB0 /* BannerViewController.swift in Sources */,
+				B5004EA12080878600A90901 /* InterstitialViewController.swift in Sources */,
 				B5A26C7A2057ED27000D2DB0 /* RewardedVideoViewController.swift in Sources */,
+				B5004E9F2080877300A90901 /* InterstitialVideoViewController.swift in Sources */,
 				B5A26C762057ECE9000D2DB0 /* SelectAdTypeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

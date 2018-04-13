@@ -11,7 +11,9 @@ class SelectAdTypeTableViewController: UITableViewController {
     
     let items = [
         (name: "Banner", segue: "ShowBannerType"),
-        (name: "Rewarded Video", segue: "ShowRewardedVideo")
+        (name: "Interstitial", segue: "ShowInterstitial"),
+        (name: "Rewarded Video", segue: "ShowRewardedVideo"),
+        (name: "Interstitial Video", segue: "ShowInterstitialVideo")
     ]
     
     override func viewDidLoad() {
