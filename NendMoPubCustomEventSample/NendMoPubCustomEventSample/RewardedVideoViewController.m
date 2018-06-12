@@ -20,13 +20,16 @@ static NSString *const kAdUnitId = @"your ad unit id";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [[MoPub sharedInstance] initializeRewardedVideoWithGlobalMediationSettings:nil delegate:self];
+    [MPRewardedVideo setDelegate:self forAdUnitId:kAdUnitId];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)dealloc {
+    [MPRewardedVideo removeDelegate:self];
 }
 
 - (IBAction)loadAd:(id)sender {

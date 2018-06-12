@@ -13,8 +13,8 @@ class RewardedVideoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        MoPub.sharedInstance().initializeRewardedVideo(withGlobalMediationSettings: [], delegate: self)
+        
+        MPRewardedVideo.setDelegate(self, forAdUnitId: adUnitId)
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,6 +22,9 @@ class RewardedVideoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    deinit {
+        MPRewardedVideo.remove(self)
+    }
 
     @IBAction func loadAd(_ sender: Any) {
         let mediationSettings = NendInstanceMediationSettings()
