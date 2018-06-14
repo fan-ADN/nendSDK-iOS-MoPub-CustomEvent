@@ -15,6 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let sdkConfig = MPMoPubConfiguration.init(adUnitIdForAppInitialization: "your ad unit id")
+        MoPub.sharedInstance().initializeSdk(with: sdkConfig) {
+            print("MoPub SDK initialization complete")
+        }
         return true
     }
 
