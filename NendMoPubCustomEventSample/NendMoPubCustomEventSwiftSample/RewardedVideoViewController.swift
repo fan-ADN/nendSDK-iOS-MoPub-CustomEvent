@@ -6,15 +6,23 @@
 //
 
 import UIKit
+import CoreLocation
 
 class RewardedVideoViewController: UIViewController {
 
     let adUnitId = "your ad unit id"
+    var locationManager: CLLocationManager!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         MPRewardedVideo.setDelegate(self, forAdUnitId: adUnitId)
+        
+        // If you use location in your app, but would like to disable location passing.
+//        MoPub.sharedInstance().locationUpdatesEnabled = false
+        
+        self.locationManager = CLLocationManager()
+        self.locationManager.requestWhenInUseAuthorization()
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,42 +57,42 @@ class RewardedVideoViewController: UIViewController {
 
 extension RewardedVideoViewController: MPRewardedVideoDelegate {
     public func rewardedVideoAdDidLoad(forAdUnitID adUnitID: String!) {
-        print("\(#function) \(adUnitID)")
+        print("\(#function) \(String(describing: adUnitID))")
     }
     
     public func rewardedVideoAdDidFailToLoad(forAdUnitID adUnitID: String!, error: Error!) {
-        print("\(#function) error: \(error)")
+        print("\(#function) error: \(String(describing: error))")
     }
     
     public func rewardedVideoAdDidFailToPlay(forAdUnitID adUnitID: String!, error: Error!) {
-        print("\(#function) error: \(error)")
+        print("\(#function) error: \(String(describing: error))")
     }
     
     public func rewardedVideoAdWillAppear(forAdUnitID adUnitID: String!) {
-        print("\(#function) \(adUnitID)")
+        print("\(#function) \(String(describing: adUnitID))")
     }
     
     public func rewardedVideoAdDidAppear(forAdUnitID adUnitID: String!) {
-        print("\(#function) \(adUnitID)")
+        print("\(#function) \(String(describing: adUnitID))")
     }
     
     public func rewardedVideoAdWillDisappear(forAdUnitID adUnitID: String!) {
-        print("\(#function) \(adUnitID)")
+        print("\(#function) \(String(describing: adUnitID))")
     }
     
     public func rewardedVideoAdDidDisappear(forAdUnitID adUnitID: String!) {
-        print("\(#function) \(adUnitID)")
+        print("\(#function) \(String(describing: adUnitID))")
     }
     
     public func rewardedVideoAdWillLeaveApplication(forAdUnitID adUnitID: String!) {
-        print("\(#function) \(adUnitID)")
+        print("\(#function) \(String(describing: adUnitID))")
     }
     
     public func rewardedVideoAdDidReceiveTapEvent(forAdUnitID adUnitID: String!) {
-        print("\(#function) \(adUnitID)")
+        print("\(#function) \(String(describing: adUnitID))")
     }
     
     public func rewardedVideoAdShouldReward(forAdUnitID adUnitID: String!, reward: MPRewardedVideoReward!) {
-        print("\(#function) \(reward.currencyType) : \(reward.amount)")
+        print("\(#function) \(String(describing: reward.currencyType)) : \(String(describing: reward.amount))")
     }
 }

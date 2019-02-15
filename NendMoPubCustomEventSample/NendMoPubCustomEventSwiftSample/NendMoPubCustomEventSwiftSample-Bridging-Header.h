@@ -2,5 +2,5 @@
 //  Use this file to import your target's public headers that you would like to expose to Swift.
 //
 
-#import "MoPub-Bridging-Header.h"
+#import "MoPub.h"
 #import "NendInstanceMediationSettings.h"

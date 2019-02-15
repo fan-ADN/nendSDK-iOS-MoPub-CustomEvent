@@ -6,16 +6,22 @@
 //
 
 import UIKit
+import CoreLocation
 
 class InterstitialVideoViewController: UIViewController {
 
     let adUnitId = "your ad unit id"
     var interstitial: MPInterstitialAdController!
+    var locationManager: CLLocationManager!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // If you use location in your app, but would like to disable location passing.
+//        MoPub.sharedInstance().locationUpdatesEnabled = false
+
+        self.locationManager = CLLocationManager()
+        self.locationManager.requestWhenInUseAuthorization()
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,29 +56,29 @@ class InterstitialVideoViewController: UIViewController {
 extension InterstitialVideoViewController: MPInterstitialAdControllerDelegate {
     
     func interstitialDidLoadAd(_ interstitial: MPInterstitialAdController!) {
-        print("\(#function) \(interstitial)")
+        print("\(#function) \(String(describing: interstitial))")
     }
     
     func interstitialDidFail(toLoadAd interstitial: MPInterstitialAdController!) {
-        print("\(#function) \(interstitial)")
+        print("\(#function) \(String(describing: interstitial))")
     }
     
     func interstitialWillAppear(_ interstitial: MPInterstitialAdController!) {
-        print("\(#function) \(interstitial)")
+        print("\(#function) \(String(describing: interstitial))")
     }
     
     func interstitialDidAppear(_ interstitial: MPInterstitialAdController!) {
-        print("\(#function) \(interstitial)")
+        print("\(#function) \(String(describing: interstitial))")
     }
     
     func interstitialWillDisappear(_ interstitial: MPInterstitialAdController!) {
-        print("\(#function) \(interstitial)")
+        print("\(#function) \(String(describing: interstitial))")
     }
     
     func interstitialDidDisappear(_ interstitial: MPInterstitialAdController!) {
-        print("\(#function) \(interstitial)")
+        print("\(#function) \(String(describing: interstitial))")
     }
     func interstitialDidReceiveTapEvent(_ interstitial: MPInterstitialAdController!) {
-        print("\(#function) \(interstitial)")
+        print("\(#function) \(String(describing: interstitial))")
     }
 }
