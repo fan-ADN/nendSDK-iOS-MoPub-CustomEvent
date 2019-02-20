@@ -8,11 +8,14 @@
 #import "InterstitialVideoViewController.h"
 #import "MPInterstitialAdController.h"
 #import "NendInstanceMediationSettings.h"
+#import <CoreLocation/CoreLocation.h>
+#import "MoPub.h"
 
 static NSString *const kAdUnitId = @"your ad unit id";
 
 @interface InterstitialVideoViewController () <MPInterstitialAdControllerDelegate>
 @property (nonatomic) MPInterstitialAdController *interstitial;
+@property (nonatomic) CLLocationManager *locationManager;
 @end
 
 @implementation InterstitialVideoViewController
@@ -20,6 +23,12 @@ static NSString *const kAdUnitId = @"your ad unit id";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // If you use location in your app, but would like to disable location passing.
+//    [MoPub sharedInstance].locationUpdatesEnabled = NO;
+    
+    self.locationManager = [[CLLocationManager alloc] init];
+    [self.locationManager requestWhenInUseAuthorization];
 }
 
 - (void)didReceiveMemoryWarning {

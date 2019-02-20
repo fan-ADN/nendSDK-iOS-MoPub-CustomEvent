@@ -39,29 +39,29 @@ class InterstitialViewController: UIViewController {
 extension InterstitialViewController: MPInterstitialAdControllerDelegate {
     
     func interstitialDidLoadAd(_ interstitial: MPInterstitialAdController!) {
-        print("\(#function) \(interstitial)")
+        print("\(#function) \(String(describing: interstitial))")
     }
     
     func interstitialDidFail(toLoadAd interstitial: MPInterstitialAdController!) {
-        print("\(#function) \(interstitial)")
+        print("\(#function) \(String(describing: interstitial))")
     }
 
     func interstitialWillAppear(_ interstitial: MPInterstitialAdController!) {
-        print("\(#function) \(interstitial)")
+        print("\(#function) \(String(describing: interstitial))")
     }
     
     func interstitialDidAppear(_ interstitial: MPInterstitialAdController!) {
-        print("\(#function) \(interstitial)")
+        print("\(#function) \(String(describing: interstitial))")
     }
     
     func interstitialWillDisappear(_ interstitial: MPInterstitialAdController!) {
-        print("\(#function) \(interstitial)")
+        print("\(#function) \(String(describing: interstitial))")
     }
     
     func interstitialDidDisappear(_ interstitial: MPInterstitialAdController!) {
-        print("\(#function) \(interstitial)")
+        print("\(#function) \(String(describing: interstitial))")
     }
     func interstitialDidReceiveTapEvent(_ interstitial: MPInterstitialAdController!) {
-        print("\(#function) \(interstitial)")
+        print("\(#function) \(String(describing: interstitial))")
     }
 }
