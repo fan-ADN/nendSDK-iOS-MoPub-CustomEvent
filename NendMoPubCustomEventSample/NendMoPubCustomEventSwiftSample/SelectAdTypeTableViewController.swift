@@ -34,7 +34,7 @@ class SelectAdTypeTableViewController: UITableViewController {
     }
     
     override func tableView(_ table: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "Cell")
+        let cell: UITableViewCell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "Cell")
         cell.textLabel!.text = self.items[indexPath.row].name
         return cell
     }

@@ -52,9 +52,10 @@ static NSString *const kAdUnitId = @"your ad unit id";
     NSLog(@"%s: %@", __FUNCTION__, interstitial);
 }
 
-- (void)interstitialDidFailToLoadAd:(MPInterstitialAdController *)interstitial {
-    NSLog(@"%s: %@", __FUNCTION__, interstitial);
+- (void)interstitialDidFailToLoadAd:(MPInterstitialAdController *)interstitial withError:(NSError *)error {
+    NSLog(@"%s: %@, %@", __FUNCTION__, interstitial, error.description);
 }
+
 - (void)interstitialWillAppear:(MPInterstitialAdController *)interstitial {
     NSLog(@"%s: %@", __FUNCTION__, interstitial);
 }

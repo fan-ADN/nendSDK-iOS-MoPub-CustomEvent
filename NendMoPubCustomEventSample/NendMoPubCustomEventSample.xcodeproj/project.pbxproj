@@ -133,12 +133,12 @@
 			isa = PBXGroup;
 			children = (
 				B5A26C252057E5DE000D2DB0 /* AppDelegate.h */,
+				B5A26C712057E8AE000D2DB0 /* RewardedVideoViewController.h */,
 				B5A26C262057E5DE000D2DB0 /* AppDelegate.m */,
 				B5A26C6B2057E71D000D2DB0 /* SelectAdTypeTableViewController.h */,
 				B5A26C6C2057E71D000D2DB0 /* SelectAdTypeTableViewController.m */,
 				B5A26C6E2057E81A000D2DB0 /* BannerViewController.h */,
 				B5A26C6F2057E81A000D2DB0 /* BannerViewController.m */,
-				B5A26C712057E8AE000D2DB0 /* RewardedVideoViewController.h */,
 				B5A26C722057E8AE000D2DB0 /* RewardedVideoViewController.m */,
 				B59A907F2080A8900043F6D1 /* InterstitialViewController.h */,
 				B59A90802080A8900043F6D1 /* InterstitialViewController.m */,
@@ -182,7 +182,6 @@
 				B5A26C1E2057E5DE000D2DB0 /* Sources */,
 				B5A26C1F2057E5DE000D2DB0 /* Frameworks */,
 				B5A26C202057E5DE000D2DB0 /* Resources */,
-				16B572AB4416A09AA44D9810 /* [CP] Embed Pods Frameworks */,
 				8B143DA17521F9B44FECE04A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -202,7 +201,6 @@
 				B5A26C552057E6EF000D2DB0 /* Sources */,
 				B5A26C562057E6EF000D2DB0 /* Frameworks */,
 				B5A26C572057E6EF000D2DB0 /* Resources */,
-				CFC2A6B374EFBAE891BAFBBB /* [CP] Embed Pods Frameworks */,
 				3562AC33D2A182C0B969FD85 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -221,7 +219,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "F@N Communications";
 				TargetAttributes = {
 					B5A26C212057E5DE000D2DB0 = {
@@ -230,7 +228,7 @@
 					};
 					B5A26C582057E6EF000D2DB0 = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -278,21 +276,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		16B572AB4416A09AA44D9810 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NendMoPubCustomEventSample/Pods-NendMoPubCustomEventSample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3562AC33D2A182C0B969FD85 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -308,7 +291,6 @@
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseButtonX.png",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseButtonX@2x.png",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseButtonX@3x.png",
-				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCountdownTimer.html",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPDAAIcon.png",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPDAAIcon@2x.png",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPDAAIcon@3x.png",
@@ -322,6 +304,7 @@
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPUnmutedBtn@2x.png",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPUnmutedBtn@3x.png",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MRAID.bundle",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPAdapters.plist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -333,7 +316,6 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButtonX.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButtonX@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButtonX@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCountdownTimer.html",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDAAIcon.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDAAIcon@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDAAIcon@3x.png",
@@ -347,6 +329,7 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPUnmutedBtn@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPUnmutedBtn@3x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MRAID.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPAdapters.plist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -368,7 +351,6 @@
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseButtonX.png",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseButtonX@2x.png",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCloseButtonX@3x.png",
-				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPCountdownTimer.html",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPDAAIcon.png",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPDAAIcon@2x.png",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPDAAIcon@3x.png",
@@ -382,6 +364,7 @@
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPUnmutedBtn@2x.png",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPUnmutedBtn@3x.png",
 				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MRAID.bundle",
+				"${PODS_ROOT}/mopub-ios-sdk/MoPubSDK/Resources/MPAdapters.plist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -393,7 +376,6 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButtonX.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButtonX@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCloseButtonX@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPCountdownTimer.html",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDAAIcon.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDAAIcon@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPDAAIcon@3x.png",
@@ -407,6 +389,7 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPUnmutedBtn@2x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPUnmutedBtn@3x.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MRAID.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPAdapters.plist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -429,21 +412,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CFC2A6B374EFBAE891BAFBBB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NendMoPubCustomEventSwiftSample/Pods-NendMoPubCustomEventSwiftSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D5A444432D09D2CB37DE0730 /* [CP] Check Pods Manifest.lock */ = {
@@ -546,6 +514,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -553,6 +522,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -601,6 +571,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -608,6 +579,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -632,6 +604,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -684,7 +657,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "NendMoPubCustomEventSwiftSample/NendMoPubCustomEventSwiftSample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -704,7 +677,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "NendMoPubCustomEventSwiftSample/NendMoPubCustomEventSwiftSample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
