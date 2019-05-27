@@ -43,8 +43,8 @@ static NSString *const kAdUnitId = @"your ad unit id";
     NSLog(@"%s: %@", __FUNCTION__, view);
 }
 
-- (void)adViewDidFailToLoadAd:(MPAdView *)view {
-    NSLog(@"%s: %@", __FUNCTION__, view);
+- (void)adView:(MPAdView *)view didFailToLoadAdWithError:(NSError *)error {
+    NSLog(@"%s: %@, %@", __FUNCTION__, view, error.description);
 }
 
 - (void)willPresentModalViewForAd:(MPAdView *)view {

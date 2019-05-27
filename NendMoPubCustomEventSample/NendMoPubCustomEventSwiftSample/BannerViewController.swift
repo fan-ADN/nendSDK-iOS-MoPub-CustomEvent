@@ -40,8 +40,8 @@ extension BannerViewController: MPAdViewDelegate {
         print(#function)
     }
     
-    func adViewDidFail(toLoadAd view: MPAdView!) {
-        print(#function)
+    func adView(_ view: MPAdView!, didFailToLoadAdWithError error: Error!) {
+        print("\(#function), error: \(String(describing: error))")
     }
     
     func willLeaveApplication(fromAd view: MPAdView!) {

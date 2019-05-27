@@ -59,8 +59,8 @@ extension InterstitialVideoViewController: MPInterstitialAdControllerDelegate {
         print("\(#function) \(String(describing: interstitial))")
     }
     
-    func interstitialDidFail(toLoadAd interstitial: MPInterstitialAdController!) {
-        print("\(#function) \(String(describing: interstitial))")
+    func interstitialDidFail(toLoadAd interstitial: MPInterstitialAdController!, withError error: Error!) {
+        print("\(#function) \(String(describing: interstitial)), error: \(String(describing: error))")
     }
     
     func interstitialWillAppear(_ interstitial: MPInterstitialAdController!) {
