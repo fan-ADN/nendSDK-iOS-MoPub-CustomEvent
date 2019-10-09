@@ -15,12 +15,13 @@ class BannerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.adView = MPAdView(adUnitId: self.adUnitId, size: MOPUB_BANNER_SIZE)
+        self.adView = MPAdView(adUnitId: self.adUnitId)
         self.adView.delegate = self
-        self.adView.frame = CGRect(x: (self.view.frame.size.width - MOPUB_BANNER_SIZE.width)/2,
-                                   y: self.view.frame.size.height - MOPUB_BANNER_SIZE.height,
-                                   width: MOPUB_BANNER_SIZE.width,
-                                   height: MOPUB_BANNER_SIZE.height)
+        let supportedAdSize = CGSize(width: 320.0, height: 50.0)
+        self.adView.frame = CGRect(x: (self.view.frame.size.width - supportedAdSize.width)/2,
+                                   y: self.view.frame.size.height - supportedAdSize.height,
+                                   width: supportedAdSize.width,
+                                   height: supportedAdSize.height)
         self.view.addSubview(self.adView)
         self.adView.loadAd()
     }
@@ -36,8 +37,8 @@ extension BannerViewController: MPAdViewDelegate {
         return self
     }
     
-    func adViewDidLoadAd(_ view: MPAdView!) {
-        print(#function)
+    func adViewDidLoadAd(_ view: MPAdView!, adSize: CGSize) {
+        print("\(#function), adSize: \(String(describing: adSize))")
     }
     
     func adView(_ view: MPAdView!, didFailToLoadAdWithError error: Error!) {

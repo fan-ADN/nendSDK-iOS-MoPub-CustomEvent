@@ -19,11 +19,12 @@ static NSString *const kAdUnitId = @"your ad unit id";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.bannerView = [[MPAdView alloc] initWithAdUnitId:kAdUnitId size:MOPUB_BANNER_SIZE];
+    self.bannerView = [[MPAdView alloc] initWithAdUnitId:kAdUnitId];
     self.bannerView.delegate = self;
-    self.bannerView.frame = CGRectMake((self.view.bounds.size.width - MOPUB_BANNER_SIZE.width) / 2,
-                                       self.view.bounds.size.height - MOPUB_BANNER_SIZE.height,
-                                       MOPUB_BANNER_SIZE.width, MOPUB_BANNER_SIZE.height);
+    CGSize supportedAdSize = CGSizeMake(320.0f, 50.0f);
+    self.bannerView.frame = CGRectMake((self.view.bounds.size.width - supportedAdSize.width) / 2,
+                                       self.view.bounds.size.height - supportedAdSize.height,
+                                       supportedAdSize.width, supportedAdSize.height);
     [self.view addSubview:self.bannerView];
     [self.bannerView loadAd];
 }
@@ -39,8 +40,8 @@ static NSString *const kAdUnitId = @"your ad unit id";
     return self;
 }
 
-- (void)adViewDidLoadAd:(MPAdView *)view {
-    NSLog(@"%s: %@", __FUNCTION__, view);
+- (void)adViewDidLoadAd:(MPAdView *)view adSize:(CGSize)adSize {
+    NSLog(@"%s: %@, adSize: %@", __FUNCTION__, view, NSStringFromCGSize(adSize));
 }
 
 - (void)adView:(MPAdView *)view didFailToLoadAdWithError:(NSError *)error {
