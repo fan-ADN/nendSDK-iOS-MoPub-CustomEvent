@@ -2,7 +2,7 @@
 //  RewardedVideoViewController.swift
 //  NendMoPubCustomEventSwiftSample
 //
-//  Copyright © 2018年 F@N Communications. All rights reserved.
+//  Copyright © 2018年 FAN Communications. All rights reserved.
 //
 
 import UIKit

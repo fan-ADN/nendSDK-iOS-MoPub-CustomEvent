@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  NendMoPubCustomEventSwiftSample
 //
-//  Copyright © 2018年 F@N Communications. All rights reserved.
+//  Copyright © 2018年 FAN Communications. All rights reserved.
 //
 
 import UIKit
@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let sdkConfig = MPMoPubConfiguration.init(adUnitIdForAppInitialization: "your ad unit id")
+        sdkConfig.additionalNetworks = [NendAdapterConfiguration.self]
         MoPub.sharedInstance().initializeSdk(with: sdkConfig) {
             print("MoPub SDK initialization complete")
         }

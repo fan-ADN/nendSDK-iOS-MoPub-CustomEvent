@@ -2,11 +2,12 @@
 //  AppDelegate.m
 //  NendMoPubCustomEventSample
 //
-//  Copyright © 2018年 F@N Communications. All rights reserved.
+//  Copyright © 2018年 FAN Communications. All rights reserved.
 //
 
 #import "AppDelegate.h"
 #import "MoPub.h"
+#import "NendAdapterConfiguration.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,7 @@
     
     MPMoPubConfiguration *sdkConfig = [[MPMoPubConfiguration alloc]
                                        initWithAdUnitIdForAppInitialization:@"your ad unit id"];
+    sdkConfig.additionalNetworks = @[NendAdapterConfiguration.class];
     [[MoPub sharedInstance] initializeSdkWithConfiguration:sdkConfig completion:^{
         NSLog(@"MoPub SDK initialization complete");
     }];
