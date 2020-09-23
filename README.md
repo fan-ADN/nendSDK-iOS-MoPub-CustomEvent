@@ -6,4 +6,4 @@
 nendSDKのiOS版MoPubカスタムイベントのサンプルです。  
 
 ## Usage
-詳細は[Wiki](https://github.com/fan-ADN/nendSDK-iOS-MoPub-CustomEvent/wiki)をご確認ください。
+詳細は[Wiki](https://github.com/fan-ADN/nendSDK-iOS-MoPub-CustomEvent/wiki)をご確認ください。  
