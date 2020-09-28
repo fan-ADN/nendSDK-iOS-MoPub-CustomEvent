@@ -62,3 +62,5 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+NendMoPubCustomEventSample/NendMoPubCustomEventSample.xcworkspace
+NendMoPubCustomEventSample/out_archive_without_sign
