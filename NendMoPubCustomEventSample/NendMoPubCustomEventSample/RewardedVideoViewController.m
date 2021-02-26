@@ -7,13 +7,13 @@
 
 #import "RewardedVideoViewController.h"
 #import "MoPub.h"
-#import "MPRewardedVideo.h"
+#import "MPRewardedAds.h"
 #import "NendInstanceMediationSettings.h"
 #import <CoreLocation/CoreLocation.h>
 
 static NSString *const kAdUnitId = @"your ad unit id";
 
-@interface RewardedVideoViewController () <MPRewardedVideoDelegate>
+@interface RewardedVideoViewController () <MPRewardedAdsDelegate>
 @property (nonatomic) CLLocationManager *locationManager;
 @end
 
@@ -21,7 +21,7 @@ static NSString *const kAdUnitId = @"your ad unit id";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [MPRewardedVideo setDelegate:self forAdUnitId:kAdUnitId];
+    [MPRewardedAds setDelegate:self forAdUnitId:kAdUnitId];
     
     // If you use location in your app, but would like to disable location passing.
 //    [MoPub sharedInstance].locationUpdatesEnabled = NO;
@@ -36,7 +36,7 @@ static NSString *const kAdUnitId = @"your ad unit id";
 }
 
 - (void)dealloc {
-    [MPRewardedVideo removeDelegate:self];
+    [MPRewardedAds removeDelegate:self];
 }
 
 - (IBAction)loadAd:(id)sender {
@@ -49,47 +49,47 @@ static NSString *const kAdUnitId = @"your ad unit id";
     [mediationSettings addCustomDoubleValue:123.45 forKey:@"doubleKey"];
     [mediationSettings addCustomStringValue:@"test" forKey:@"stringKey"];
     [mediationSettings addCustomBoolValue:YES forKey:@"boolKey"];
-    [MPRewardedVideo loadRewardedVideoAdWithAdUnitID:kAdUnitId withMediationSettings:@[mediationSettings]];
+    [MPRewardedAds loadRewardedAdWithAdUnitID:kAdUnitId withMediationSettings:@[mediationSettings]];
 }
 
 - (IBAction)showAd:(id)sender {
-    if ([MPRewardedVideo hasAdAvailableForAdUnitID:kAdUnitId]) {
-        [MPRewardedVideo presentRewardedVideoAdForAdUnitID:kAdUnitId fromViewController:self withReward:nil];
+    if ([MPRewardedAds hasAdAvailableForAdUnitID:kAdUnitId]) {
+        [MPRewardedAds presentRewardedAdForAdUnitID:kAdUnitId fromViewController:self withReward:nil];
     }
 }
 
-#pragma mark - MPRewardedVideoDelegate
-- (void)rewardedVideoAdDidLoadForAdUnitID:(NSString *)adUnitID {
+#pragma mark - MPRewardedAdsDelegate
+- (void)rewardedAdDidLoadForAdUnitID:(NSString *)adUnitID {
     NSLog(@"%s: %@", __FUNCTION__, adUnitID);
 }
-- (void)rewardedVideoAdDidFailToLoadForAdUnitID:(NSString *)adUnitID error:(NSError *)error {
+- (void)rewardedAdDidFailToLoadForAdUnitID:(NSString *)adUnitID error:(NSError *)error {
     NSLog(@"%s: %@, error: %@", __FUNCTION__, adUnitID, error);
 }
-- (void)rewardedVideoAdDidFailToPlayForAdUnitID:(NSString *)adUnitID error:(NSError *)error {
+- (void)rewardedAdDidFailToShowForAdUnitID:(NSString *)adUnitID error:(NSError *)error {
     NSLog(@"%s: %@, error: %@", __FUNCTION__, adUnitID, error);
 }
-- (void)rewardedVideoAdWillAppearForAdUnitID:(NSString *)adUnitID {
+- (void)rewardedAdWillPresentForAdUnitID:(NSString *)adUnitID {
     NSLog(@"%s: %@", __FUNCTION__, adUnitID);
 }
-- (void)rewardedVideoAdDidAppearForAdUnitID:(NSString *)adUnitID {
+- (void)rewardedAdDidPresentForAdUnitID:(NSString *)adUnitID {
     NSLog(@"%s: %@", __FUNCTION__, adUnitID);
 }
-- (void)rewardedVideoAdWillDisappearForAdUnitID:(NSString *)adUnitID {
+- (void)rewardedAdWillDismissForAdUnitID:(NSString *)adUnitID {
     NSLog(@"%s: %@", __FUNCTION__, adUnitID);
 }
-- (void)rewardedVideoAdDidDisappearForAdUnitID:(NSString *)adUnitID {
+- (void)rewardedAdDidDismissForAdUnitID:(NSString *)adUnitID {
     NSLog(@"%s: %@", __FUNCTION__, adUnitID);
 }
-- (void)rewardedVideoAdWillLeaveApplicationForAdUnitID:(NSString *)adUnitID {
+- (void)rewardedAdWillLeaveApplicationForAdUnitID:(NSString *)adUnitID {
     NSLog(@"%s: %@", __FUNCTION__, adUnitID);
 }
-- (void)rewardedVideoAdDidReceiveTapEventForAdUnitID:(NSString *)adUnitID {
+- (void)rewardedAdDidReceiveTapEventForAdUnitID:(NSString *)adUnitID {
     NSLog(@"%s: %@", __FUNCTION__, adUnitID);
 }
-- (void)rewardedVideoAdShouldRewardForAdUnitID:(NSString *)adUnitID reward:(MPRewardedVideoReward *)reward {
+- (void)rewardedAdShouldRewardForAdUnitID:(NSString *)adUnitID reward:(MPReward *)reward {
     NSLog(@"%s: %@, reward: %@ %@", __FUNCTION__, adUnitID, reward.currencyType, reward.amount);
 }
-- (void)rewardedVideoAdDidExpireForAdUnitID:(NSString *)adUnitID {
+- (void)rewardedAdDidExpireForAdUnitID:(NSString *)adUnitID {
     NSLog(@"%s: %@", __FUNCTION__, adUnitID);
 }
 

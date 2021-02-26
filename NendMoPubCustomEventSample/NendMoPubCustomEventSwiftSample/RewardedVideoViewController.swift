@@ -16,7 +16,7 @@ class RewardedVideoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        MPRewardedVideo.setDelegate(self, forAdUnitId: adUnitId)
+        MPRewardedAds.setDelegate(self, forAdUnitId: adUnitId)
         
         // If you use location in your app, but would like to disable location passing.
 //        MoPub.sharedInstance().locationUpdatesEnabled = false
@@ -31,7 +31,7 @@ class RewardedVideoViewController: UIViewController {
     }
     
     deinit {
-        MPRewardedVideo.remove(self)
+        MPRewardedAds.remove(self)
     }
 
     @IBAction func loadAd(_ sender: Any) {
@@ -44,55 +44,59 @@ class RewardedVideoViewController: UIViewController {
         mediationSettings.addCustomDoubleValue(123.45, forKey: "doubleKey")
         mediationSettings.addCustomStringValue("test", forKey: "stringKey")
         mediationSettings.addCustomBoolValue(true, forKey: "boolKey")
-        MPRewardedVideo.loadAd(withAdUnitID: adUnitId, withMediationSettings: [mediationSettings])
+        MPRewardedAds.loadRewardedAd(withAdUnitID: adUnitId, withMediationSettings: [mediationSettings])
     }
     
     @IBAction func showAd(_ sender: Any) {
-        if MPRewardedVideo.hasAdAvailable(forAdUnitID: adUnitId) {
-            MPRewardedVideo.presentAd(forAdUnitID: adUnitId, from: self, with: nil)
+        if MPRewardedAds.hasAdAvailable(forAdUnitID: adUnitId) {
+            MPRewardedAds.presentRewardedAd(forAdUnitID: adUnitId, from: self, with: nil)
         }
     }
 
 }
 
-extension RewardedVideoViewController: MPRewardedVideoDelegate {
-    public func rewardedVideoAdDidLoad(forAdUnitID adUnitID: String!) {
+extension RewardedVideoViewController: MPRewardedAdsDelegate {
+    func rewardedAdDidLoad(forAdUnitID adUnitID: String!) {
         print("\(#function) \(String(describing: adUnitID))")
     }
     
-    public func rewardedVideoAdDidFailToLoad(forAdUnitID adUnitID: String!, error: Error!) {
+    func rewardedAdDidFailToLoad(forAdUnitID adUnitID: String!, error: Error!) {
         print("\(#function) error: \(String(describing: error))")
     }
     
-    public func rewardedVideoAdDidFailToPlay(forAdUnitID adUnitID: String!, error: Error!) {
+    func rewardedAdDidFailToShow(forAdUnitID adUnitID: String!, error: Error!) {
         print("\(#function) error: \(String(describing: error))")
     }
     
-    public func rewardedVideoAdWillAppear(forAdUnitID adUnitID: String!) {
+    func rewardedAdWillPresent(forAdUnitID adUnitID: String!) {
         print("\(#function) \(String(describing: adUnitID))")
     }
     
-    public func rewardedVideoAdDidAppear(forAdUnitID adUnitID: String!) {
+    func rewardedAdDidPresent(forAdUnitID adUnitID: String!) {
         print("\(#function) \(String(describing: adUnitID))")
     }
     
-    public func rewardedVideoAdWillDisappear(forAdUnitID adUnitID: String!) {
+    func rewardedAdWillDismiss(forAdUnitID adUnitID: String!) {
         print("\(#function) \(String(describing: adUnitID))")
     }
     
-    public func rewardedVideoAdDidDisappear(forAdUnitID adUnitID: String!) {
+    func rewardedAdDidDismiss(forAdUnitID adUnitID: String!) {
         print("\(#function) \(String(describing: adUnitID))")
     }
     
-    public func rewardedVideoAdWillLeaveApplication(forAdUnitID adUnitID: String!) {
+    func rewardedAdWillLeaveApplication(forAdUnitID adUnitID: String!) {
         print("\(#function) \(String(describing: adUnitID))")
     }
     
-    public func rewardedVideoAdDidReceiveTapEvent(forAdUnitID adUnitID: String!) {
+    func rewardedAdDidReceiveTapEvent(forAdUnitID adUnitID: String!) {
         print("\(#function) \(String(describing: adUnitID))")
     }
     
-    public func rewardedVideoAdShouldReward(forAdUnitID adUnitID: String!, reward: MPRewardedVideoReward!) {
+    func rewardedAdShouldReward(forAdUnitID adUnitID: String!, reward: MPReward!) {
         print("\(#function) \(String(describing: reward.currencyType)) : \(String(describing: reward.amount))")
+    }
+    
+    func rewardedAdDidExpire(forAdUnitID adUnitID: String!) {
+        print("\(#function) \(String(describing: adUnitID))")
     }
 }

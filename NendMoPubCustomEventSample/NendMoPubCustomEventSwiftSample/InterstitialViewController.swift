@@ -54,11 +54,11 @@ extension InterstitialViewController: MPInterstitialAdControllerDelegate {
         print("\(#function) \(String(describing: interstitial))")
     }
     
-    func interstitialWillDisappear(_ interstitial: MPInterstitialAdController!) {
+    func interstitialWillDismiss(_ interstitial: MPInterstitialAdController!) {
         print("\(#function) \(String(describing: interstitial))")
     }
     
-    func interstitialDidDisappear(_ interstitial: MPInterstitialAdController!) {
+    func interstitialDidDismiss(_ interstitial: MPInterstitialAdController!) {
         print("\(#function) \(String(describing: interstitial))")
     }
     func interstitialDidReceiveTapEvent(_ interstitial: MPInterstitialAdController!) {

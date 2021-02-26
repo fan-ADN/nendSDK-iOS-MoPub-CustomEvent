@@ -64,11 +64,11 @@ static NSString *const kAdUnitId = @"your ad unit id";
     NSLog(@"%s: %@", __FUNCTION__, interstitial);
 }
 
-- (void)interstitialWillDisappear:(MPInterstitialAdController *)interstitial {
+- (void)interstitialWillDismiss:(MPInterstitialAdController *)interstitial {
     NSLog(@"%s: %@", __FUNCTION__, interstitial);
 }
 
-- (void)interstitialDidDisappear:(MPInterstitialAdController *)interstitial {
+- (void)interstitialDidDismiss:(MPInterstitialAdController *)interstitial {
     NSLog(@"%s: %@", __FUNCTION__, interstitial);
 }
 
