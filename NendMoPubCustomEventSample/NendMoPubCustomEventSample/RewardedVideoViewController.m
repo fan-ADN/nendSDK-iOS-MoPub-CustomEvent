@@ -9,12 +9,10 @@
 #import "MoPub.h"
 #import "MPRewardedAds.h"
 #import "NendInstanceMediationSettings.h"
-#import <CoreLocation/CoreLocation.h>
 
-static NSString *const kAdUnitId = @"your ad unit id";
+static NSString *const kAdUnitId = @"your_ad_unit_id";
 
 @interface RewardedVideoViewController () <MPRewardedAdsDelegate>
-@property (nonatomic) CLLocationManager *locationManager;
 @end
 
 @implementation RewardedVideoViewController
@@ -22,12 +20,6 @@ static NSString *const kAdUnitId = @"your ad unit id";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [MPRewardedAds setDelegate:self forAdUnitId:kAdUnitId];
-    
-    // If you use location in your app, but would like to disable location passing.
-//    [MoPub sharedInstance].locationUpdatesEnabled = NO;
-    
-    self.locationManager = [[CLLocationManager alloc] init];
-    [self.locationManager requestWhenInUseAuthorization];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,7 +33,7 @@ static NSString *const kAdUnitId = @"your ad unit id";
 
 - (IBAction)loadAd:(id)sender {
     NendInstanceMediationSettings *mediationSettings = [NendInstanceMediationSettings new];
-    mediationSettings.userId = @"your-user-id";
+    mediationSettings.userId = @"your_user_id";
     [mediationSettings setAge:18];
     [mediationSettings setGender:NendAdGenderMale];
     [mediationSettings setBirthdayWithYear:2000 month:1 day:1];

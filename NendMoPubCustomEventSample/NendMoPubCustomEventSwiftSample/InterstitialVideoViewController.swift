@@ -6,22 +6,14 @@
 //
 
 import UIKit
-import CoreLocation
 
 class InterstitialVideoViewController: UIViewController {
 
-    let adUnitId = "your ad unit id"
+    let adUnitId = "your_ad_unit_id"
     var interstitial: MPInterstitialAdController!
-    var locationManager: CLLocationManager!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // If you use location in your app, but would like to disable location passing.
-//        MoPub.sharedInstance().locationUpdatesEnabled = false
-
-        self.locationManager = CLLocationManager()
-        self.locationManager.requestWhenInUseAuthorization()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,7 +24,7 @@ class InterstitialVideoViewController: UIViewController {
     @IBAction func loadAd(_ sender: Any) {
         
         let mediationSettings = NendInstanceMediationSettings()
-        mediationSettings.userId = "your user id"
+        mediationSettings.userId = "your_user_id"
         mediationSettings.setAge(18)
         mediationSettings.setGender(NendMediatoinGender.adGenderMale)
         mediationSettings.setBirthdayWithYear(2000, month: 1, day: 1 )
@@ -63,11 +55,11 @@ extension InterstitialVideoViewController: MPInterstitialAdControllerDelegate {
         print("\(#function) \(String(describing: interstitial)), error: \(String(describing: error))")
     }
     
-    func interstitialWillAppear(_ interstitial: MPInterstitialAdController!) {
+    func interstitialWillPresent(_ interstitial: MPInterstitialAdController!) {
         print("\(#function) \(String(describing: interstitial))")
     }
     
-    func interstitialDidAppear(_ interstitial: MPInterstitialAdController!) {
+    func interstitialDidPresent(_ interstitial: MPInterstitialAdController!) {
         print("\(#function) \(String(describing: interstitial))")
     }
     

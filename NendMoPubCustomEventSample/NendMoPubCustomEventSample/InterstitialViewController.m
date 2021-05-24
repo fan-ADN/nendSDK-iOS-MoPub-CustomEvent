@@ -9,7 +9,7 @@
 #import "MPInterstitialAdController.h"
 #import "NendInstanceMediationSettings.h"
 
-static NSString *const kAdUnitId = @"your ad unit id";
+static NSString *const kAdUnitId = @"your_ad_unit_id";
 
 @interface InterstitialViewController () <MPInterstitialAdControllerDelegate>
 @property (nonatomic) MPInterstitialAdController *interstitial;
@@ -56,11 +56,11 @@ static NSString *const kAdUnitId = @"your ad unit id";
     NSLog(@"%s: %@, %@", __FUNCTION__, interstitial, error.description);
 }
 
-- (void)interstitialWillAppear:(MPInterstitialAdController *)interstitial {
+- (void)interstitialWillPresent:(MPInterstitialAdController *)interstitial {
     NSLog(@"%s: %@", __FUNCTION__, interstitial);
 }
 
-- (void)interstitialDidAppear:(MPInterstitialAdController *)interstitial {
+- (void)interstitialDidPresent:(MPInterstitialAdController *)interstitial {
     NSLog(@"%s: %@", __FUNCTION__, interstitial);
 }
 

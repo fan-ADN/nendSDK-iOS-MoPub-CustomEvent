@@ -8,7 +8,7 @@
 #import "BannerViewController.h"
 #import "MPAdView.h"
 
-static NSString *const kAdUnitId = @"your ad unit id";
+static NSString *const kAdUnitId = @"your_ad_unit_id";
 
 @interface BannerViewController () <MPAdViewDelegate>
 @property (nonatomic) MPAdView *bannerView;

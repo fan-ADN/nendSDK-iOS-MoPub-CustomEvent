@@ -8,14 +8,12 @@
 #import "InterstitialVideoViewController.h"
 #import "MPInterstitialAdController.h"
 #import "NendInstanceMediationSettings.h"
-#import <CoreLocation/CoreLocation.h>
 #import "MoPub.h"
 
-static NSString *const kAdUnitId = @"your ad unit id";
+static NSString *const kAdUnitId = @"your_ad_unit_id";
 
 @interface InterstitialVideoViewController () <MPInterstitialAdControllerDelegate>
 @property (nonatomic) MPInterstitialAdController *interstitial;
-@property (nonatomic) CLLocationManager *locationManager;
 @end
 
 @implementation InterstitialVideoViewController
@@ -23,12 +21,6 @@ static NSString *const kAdUnitId = @"your ad unit id";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    // If you use location in your app, but would like to disable location passing.
-//    [MoPub sharedInstance].locationUpdatesEnabled = NO;
-    
-    self.locationManager = [[CLLocationManager alloc] init];
-    [self.locationManager requestWhenInUseAuthorization];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -76,11 +68,11 @@ static NSString *const kAdUnitId = @"your ad unit id";
     NSLog(@"%s: %@, %@", __FUNCTION__, interstitial, error.description);
 }
 
-- (void)interstitialWillAppear:(MPInterstitialAdController *)interstitial {
+- (void)interstitialWillPresent:(MPInterstitialAdController *)interstitial {
     NSLog(@"%s: %@", __FUNCTION__, interstitial);
 }
 
-- (void)interstitialDidAppear:(MPInterstitialAdController *)interstitial {
+- (void)interstitialDidPresent:(MPInterstitialAdController *)interstitial {
     NSLog(@"%s: %@", __FUNCTION__, interstitial);
 }
 

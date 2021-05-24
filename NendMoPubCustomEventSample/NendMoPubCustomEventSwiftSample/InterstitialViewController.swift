@@ -9,7 +9,7 @@ import UIKit
 
 class InterstitialViewController: UIViewController {
 
-    let adUnitId = "your ad unit id"
+    let adUnitId = "your_ad_unit_id"
     var interstitial: MPInterstitialAdController! = nil
     
     override func viewDidLoad() {
@@ -46,11 +46,11 @@ extension InterstitialViewController: MPInterstitialAdControllerDelegate {
         print("\(#function) \(String(describing: interstitial)), error: \(String(describing: error))")
     }
 
-    func interstitialWillAppear(_ interstitial: MPInterstitialAdController!) {
+    func interstitialWillPresent(_ interstitial: MPInterstitialAdController!) {
         print("\(#function) \(String(describing: interstitial))")
     }
     
-    func interstitialDidAppear(_ interstitial: MPInterstitialAdController!) {
+    func interstitialDidPresent(_ interstitial: MPInterstitialAdController!) {
         print("\(#function) \(String(describing: interstitial))")
     }
     

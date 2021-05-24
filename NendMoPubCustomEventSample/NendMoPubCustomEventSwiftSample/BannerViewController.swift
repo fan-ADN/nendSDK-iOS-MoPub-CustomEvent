@@ -9,7 +9,7 @@ import UIKit
 
 class BannerViewController: UIViewController {
 
-    let adUnitId = "your ad unit id"
+    let adUnitId = "your_ad_unit_id"
     var adView: MPAdView!
     
     override func viewDidLoad() {

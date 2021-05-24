@@ -20,7 +20,7 @@
     // Override point for customization after application launch.
     
     MPMoPubConfiguration *sdkConfig = [[MPMoPubConfiguration alloc]
-                                       initWithAdUnitIdForAppInitialization:@"your ad unit id"];
+                                       initWithAdUnitIdForAppInitialization:@"your_ad_unit_id"];
     sdkConfig.additionalNetworks = @[NendAdapterConfiguration.class];
     [[MoPub sharedInstance] initializeSdkWithConfiguration:sdkConfig completion:^{
         NSLog(@"MoPub SDK initialization complete");
